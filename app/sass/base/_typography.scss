@@ -16,3 +16,9 @@ $dir: '../fonts';
   src: url('../../fonts/OfficinaSansBoldC.otf');
   font-weight: bold;
 }
+
+@font-face {
+  font-family: OfficinaSansBlackC;
+  src: url('../../fonts/OfficinaSansMediumC.woff2');
+  font-weight: 400;
+}
