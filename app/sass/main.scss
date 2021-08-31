@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-position: center top;
   min-height: 100vh;
-  background-color: #3A1306;
+  background-color: #381004;
   background-repeat: no-repeat;
 
   @include response-to(small) {
@@ -32,8 +32,12 @@ body {
     left: 0;
     right: 0;
     height: 320px;
-    background: linear-gradient(0deg, #3A1306, rgba(#3A1306, 0));
+    background: linear-gradient(0deg, #381004, rgba(#381004, 0));
     z-index: -1;
+
+    @include response-to(small) {
+      bottom: 1130px;
+    }
   }
 
   .choko-part {
@@ -43,26 +47,52 @@ body {
     &_1 {
       top: 42px;
       left: 115px;
+
+      @include response-to(small) {
+        display: none;
+      }
     }
 
     &_2 {
       top: -78px;
       left: 60px;
+
+      @include response-to(small) {
+        left: -159px;
+        bottom: 313px;
+        top: unset;
+      }
     }
 
     &_3 {
       top: 34px;
       right: 183px;
+
+      @include response-to(small) {
+        top: 0;
+        right: 0;
+      }
     }
 
     &_4 {
       top: 185px;
       right: 39px;
+
+      @include response-to(small) {
+        top: 98px;
+        right: unset;
+        left: 39px;
+      }
     }
 
     &_5 {
       bottom: 137px;
       right: 82px;
+
+      @include response-to(small) {
+        bottom: 865px;
+        right: -23px;
+      }
     }
 
     &_6 {
@@ -397,37 +427,6 @@ body {
       }
     }
   }
-  
-  .info-text {
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 400;
-    margin-top: 99px;
-    margin-bottom: 25px;
-
-    @include response-to(huge) {
-      margin-top: 139px;
-    }
-
-    @include response-to(large) {
-      padding-left: 20px;
-      padding-right: 20px;
-      margin-top: 249px;
-    }
-
-    @include response-to(small) {
-      margin-bottom: 22px;
-      margin-top: 30px;
-    }
-
-    & .br-pc {
-
-      @include response-to(large) {
-        display: none;
-      }
-    }
-  }
 
   .footer {
     display: flex;
@@ -444,6 +443,46 @@ body {
 
     @include response-to(small) {
       flex-wrap: wrap;
+      margin-bottom: 0;
+    }
+
+    &__wrap {
+
+      @include response-to(small) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .info-text {
+        color: #fff;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 99px;
+        margin-bottom: 25px;
+        width: 100%;
+
+        @include response-to(huge) {
+          margin-top: 139px;
+        }
+
+        @include response-to(large) {
+          margin-top: 249px;
+        }
+
+        @include response-to(small) {
+          margin-bottom: 22px;
+          margin-top: 0;
+          order: 2;
+        }
+
+        & .br-pc {
+
+          @include response-to(large) {
+            display: none;
+          }
+        }
+      }
     }
 
     &__item {
@@ -456,7 +495,7 @@ body {
       &:first-of-type {
 
         @include response-to(small) {
-          order: 3;
+          order: 2;
         }
       }
 
@@ -465,6 +504,7 @@ body {
 
         @include response-to(small) {
           width: 100%;
+          order: 3;
         }
       }
 
@@ -519,7 +559,7 @@ body {
         font-size: 12px;
 
         @include response-to(small) {
-          margin-bottom: 36px;
+          margin-bottom: 17px;
         }
       }
 
@@ -543,14 +583,14 @@ body {
         @include response-to(small) {
           width: 47px;
           height: 47px;
-          margin-bottom: 14px;
+          margin-bottom: 20px;
         }
         
         &:not(:last-of-type) {
           margin-right: 8px;
 
           @include response-to(small) {
-            margin-right: 13px;
+            margin-right: 41px;
           }
         }
         
