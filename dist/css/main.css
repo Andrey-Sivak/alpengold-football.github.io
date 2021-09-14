@@ -73,14 +73,15 @@ html {
 body {
   font-family: OfficinaSansBlackC;
   background-image: url("../img/main-bg.png");
-  background-size: cover;
+  background-size: 100vw;
   background-position: center 112px;
   min-height: 100vh;
   background-color: #381004;
   background-repeat: no-repeat; }
   @media (max-width: 767px) {
     body {
-      background-size: 1440px; } }
+      background-size: 1440px;
+      background-position: center 0; } }
   body:after {
     content: '';
     position: absolute;
@@ -116,23 +117,23 @@ body {
       right: 183px; }
       @media (max-width: 767px) {
         body .choko-part_3 {
-             top: 123px;
-    right: -32px; } }
+          top: 123px;
+          right: -30px; } }
     body .choko-part_4 {
       top: 297px;
       right: 39px; }
       @media (max-width: 767px) {
         body .choko-part_4 {
-          top: 155px;
+          top: 130px;
           right: unset;
-          left: 39px; } }
+          left: 16px; } }
     body .choko-part_5 {
       bottom: 137px;
       right: 82px; }
       @media (max-width: 767px) {
         body .choko-part_5 {
-          bottom: 865px;
-          right: -23px; } }
+          bottom: 985px;
+          right: -13px; } }
     body .choko-part_6 {
       bottom: 194px;
       left: 109px; }
@@ -169,6 +170,46 @@ body {
     transition: all ease-in-out .5s; }
     body .loader.active {
       opacity: 1; }
+  body .top-banner {
+    background-color: #FDF25A;
+    padding-top: 27px;
+    padding-bottom: 19px;
+    width: 100%; }
+    @media (max-width: 767px) {
+      body .top-banner {
+        padding-top: 41px;
+        padding-bottom: 26px; } }
+    body .top-banner-text {
+      color: #7B372F;
+      position: relative;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 33px;
+      -webkit-text-decoration-line: underline;
+              text-decoration-line: underline;
+      text-transform: uppercase;
+      max-width: 744px;
+      margin: 0 auto;
+      display: block; }
+      @media (max-width: 767px) {
+        body .top-banner-text {
+          max-width: 117px;
+          font-size: 12px;
+          line-height: 15px;
+          margin-left: 20px;
+          margin-right: unset; } }
+    body .top-banner-img {
+      display: block;
+      position: absolute;
+      top: -70px;
+      right: 61px; }
+      @media (max-width: 767px) {
+        body .top-banner-img {
+          width: 229px;
+          height: auto;
+          top: -50px;
+          right: unset;
+          left: 120px; } }
   body .container {
     padding-top: 21px;
     position: relative; }
@@ -261,6 +302,9 @@ body {
           padding-right: 0;
           width: 360px;
           margin-bottom: 97px; } }
+      body .content__chokos_img {
+        display: block;
+        margin-bottom: 22px; }
     body .content__text-img {
       margin-left: 30px;
       text-align: center;
@@ -343,7 +387,7 @@ body {
         -webkit-flex: unset;
             -ms-flex: unset;
                 flex: unset;
-        margin-bottom: 252px; } }
+        margin-bottom: 280px; } }
     body .counter__bottom {
       position: absolute;
       z-index: -1;
@@ -475,6 +519,17 @@ body {
         @media (max-width: 767px) {
           body .counter__item_text {
             margin-top: 8px; } }
+    body .counter-img_center {
+      display: block;
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      bottom: -207px; }
+      @media (max-width: 767px) {
+        body .counter-img_center {
+          bottom: -195px; } }
   body .footer {
     display: -webkit-box;
     display: -webkit-flex;
@@ -677,61 +732,5 @@ body {
 
 .btn:hover {
   box-shadow: none; }
-
-.top-banner {
-  background-color:#FDF25A;
-  padding-top:27px;
-  padding-bottom:19px;
-  width:100%;}
-
-.top-banner-text {
-  color:#7B372F;
-  position:relative;
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 33px;
-  text-decoration-line: underline;
-  text-transform: uppercase;
-  max-width:744px;
-  margin: 0 auto;
-  display: block;}
-
-.top-banner-img {
-  display: block;
-  position: absolute;
-  top:-70px;
-  right:61px;}
-
- .content__chokos_img { 
-  display:block;
-  margin-bottom: 22px;
-}
-
-.counter-img_center {
-  display:block;
-  position:absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom:-207px;
-}
-
-@media(max-width: 767px) {
-  .top-banner {
-     padding-top:41px;
-     padding-bottom:26px}
-  .top-banner-text {
-     max-width: 117px;
-     font-size: 12px;
-     line-height: 15px;
-     margin-left:20px;
-     margin-right:unset}
-   .top-banner-img {
-     width:229px;
-     height:auto;
-     top:-50px;
-     right:unset;
-     left:120px;}
-}
-
 
 /*# sourceMappingURL=main.css.map */

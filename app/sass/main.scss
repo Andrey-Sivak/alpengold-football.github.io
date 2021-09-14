@@ -15,14 +15,15 @@ html {
 body {
   font-family: OfficinaSansBlackC;
   background-image: url('../img/main-bg.png');
-  background-size: cover;
-  background-position: center top;
+  background-size: 100vw;
+  background-position: center 112px;
   min-height: 100vh;
   background-color: #381004;
   background-repeat: no-repeat;
 
   @include response-to(small) {
     background-size: 1440px;
+    background-position: center 0;
   }
 
   &:after {
@@ -45,7 +46,7 @@ body {
     z-index: -1;
 
     &_1 {
-      top: 42px;
+      top: 154px;
       left: 115px;
 
       @include response-to(small) {
@@ -54,7 +55,7 @@ body {
     }
 
     &_2 {
-      top: -78px;
+      top: 34px;
       left: 60px;
 
       @include response-to(small) {
@@ -65,23 +66,23 @@ body {
     }
 
     &_3 {
-      top: 34px;
+      top: 146px;
       right: 183px;
 
       @include response-to(small) {
-        top: 0;
-        right: 0;
+        top: 123px;
+        right: -30px;
       }
     }
 
     &_4 {
-      top: 185px;
+      top: 297px;
       right: 39px;
 
       @include response-to(small) {
-        top: 98px;
+        top: 130px;
         right: unset;
-        left: 39px;
+        left: 16px;
       }
     }
 
@@ -90,8 +91,8 @@ body {
       right: 82px;
 
       @include response-to(small) {
-        bottom: 865px;
-        right: -23px;
+        bottom: 985px;
+        right: -13px;
       }
     }
 
@@ -118,6 +119,54 @@ body {
     }
   }
 
+  .top-banner {
+    background-color:#FDF25A;
+    padding-top:27px;
+    padding-bottom:19px;
+    width:100%;
+
+    @include response-to(small) {
+      padding-top:41px;
+      padding-bottom:26px
+    }
+
+    &-text {
+      color:#7B372F;
+      position:relative;
+      font-weight: 900;
+      font-size: 26px;
+      line-height: 33px;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+      max-width:744px;
+      margin: 0 auto;
+      display: block;
+
+      @include response-to(small) {
+        max-width: 117px;
+        font-size: 12px;
+        line-height: 15px;
+        margin-left:20px;
+        margin-right:unset
+      }
+    }
+
+    &-img {
+      display: block;
+      position: absolute;
+      top:-70px;
+      right:61px;
+
+      @include response-to(small) {
+        width:229px;
+        height:auto;
+        top:-50px;
+        right:unset;
+        left:120px;
+      }
+    }
+  }
+
   & .container {
     padding-top: 21px;
     position: relative;
@@ -129,7 +178,7 @@ body {
     margin: 21px auto 37px;
 
     @include response-to(small) {
-      margin-top: 70px;
+      margin-top: 26px;
       margin-bottom: 25px;
     }
   }
@@ -191,14 +240,19 @@ body {
         position: static;
         padding-right: 0;
         width: 360px;
-        margin-bottom: 160px;
+        margin-bottom: 97px;
+      }
+
+      &_img {
+        display:block;
+        margin-bottom: 22px;
       }
     }
 
     &__text-img {
       margin-left: 30px;
       text-align: center;
-      margin-top: -34px;
+      margin-top: 65px;
 
       @include response-to(large) {
         position: absolute;
@@ -286,7 +340,7 @@ body {
 
     @include response-to(small) {
       flex: unset;
-      margin-bottom: 252px;
+      margin-bottom: 280px;
     }
 
     &__bottom {
@@ -426,6 +480,18 @@ body {
         }
       }
     }
+
+    &-img_center {
+      display:block;
+      position:absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom:-207px;
+
+      @include response-to(small) {
+        bottom: -195px;
+      }
+    }
   }
 
   .footer {
@@ -458,7 +524,7 @@ body {
         text-align: center;
         font-size: 12px;
         font-weight: 400;
-        margin-top: 93px;
+        margin-top: 25px;
         margin-bottom: 25px;
         width: 100%;
 
