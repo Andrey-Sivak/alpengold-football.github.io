@@ -81,7 +81,7 @@ body {
   @media (max-width: 767px) {
     body {
       background-size: 1440px;
-      background-position: center 0; } }
+      background-position: center -120px; } }
   body:after {
     content: '';
     position: absolute;
@@ -117,8 +117,8 @@ body {
       right: 183px; }
       @media (max-width: 767px) {
         body .choko-part_3 {
-          top: 123px;
-          right: -30px; } }
+          top: 75px;
+          right: -62px; } }
     body .choko-part_4 {
       top: 297px;
       right: 39px; }
@@ -218,11 +218,27 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     display: block;
-    margin: 21px auto 37px; }
+    margin: 174px auto 59px; }
     @media (max-width: 767px) {
       body .logo {
-        margin-top: 26px;
-        margin-bottom: 25px; } }
+        margin-bottom: 71px;
+        margin-top: 95px; }
+        body .logo img {
+          width: 53px;
+          height: auto; } }
+  body .logo5 {
+    position: absolute;
+    right: 20px;
+    top: 132px; }
+    @media (max-width: 767px) {
+      body .logo5 {
+        width: 66px;
+        height: auto;
+        right: unset;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+                transform: translateX(-50%); } }
   body .content {
     position: relative;
     display: -webkit-box;
@@ -395,7 +411,7 @@ body {
       -webkit-transform: translateX(-50%);
           -ms-transform: translateX(-50%);
               transform: translateX(-50%);
-      bottom: -98px;
+      bottom: -71px;
       max-width: 317px;
       width: 100%; }
       @media (max-width: 992px) {
@@ -409,19 +425,23 @@ body {
                 transform: translateX(-50%); }
       body .counter__bottom_flag {
         z-index: 0;
-        top: -19px; }
+        top: -80px; }
         @media (max-width: 992px) {
           body .counter__bottom_flag {
-            width: 289px;
+            width: 305px;
             height: auto;
-            top: 0; } }
+            top: -70px; } }
       body .counter__bottom_bg {
         z-index: 1;
         top: -73px; }
         @media (max-width: 992px) {
           body .counter__bottom_bg {
-            width: 323px;
-            top: -55px; } }
+            display: none; } }
+        body .counter__bottom_bg.mob {
+          display: none; }
+          @media (max-width: 992px) {
+            body .counter__bottom_bg.mob {
+              display: block; } }
       body .counter__bottom_clubs {
         position: relative;
         z-index: 2;

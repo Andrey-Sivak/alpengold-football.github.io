@@ -23,7 +23,7 @@ body {
 
   @include response-to(small) {
     background-size: 1440px;
-    background-position: center 0;
+    background-position: center -120px;
   }
 
   &:after {
@@ -70,8 +70,8 @@ body {
       right: 183px;
 
       @include response-to(small) {
-        top: 123px;
-        right: -30px;
+        top: 75px;
+        right: -62px;
       }
     }
 
@@ -175,11 +175,30 @@ body {
   .logo {
     width: fit-content;
     display: block;
-    margin: 21px auto 37px;
+    margin: 174px auto 59px;
 
     @include response-to(small) {
-      margin-top: 26px;
-      margin-bottom: 25px;
+      margin-bottom: 71px;
+      margin-top: 95px;
+
+      img {
+        width: 53px;
+        height: auto;
+      }
+    }
+  }
+
+  .logo5 {
+    position: absolute;
+    right: 20px;
+    top: 132px;
+
+    @include response-to(small) {
+      width: 66px;
+      height: auto;
+      right: unset;
+      left: 50%;
+      transform: translateX(-50%);
     }
   }
 
@@ -348,7 +367,7 @@ body {
       z-index: -1;
       left: 50%;
       transform: translateX(-50%);
-      bottom: -98px;
+      bottom: -71px;
       max-width: 317px;
       width: 100%;
 
@@ -365,12 +384,12 @@ body {
 
       &_flag {
         z-index: 0;
-        top: -19px;
+        top: -80px;
 
         @include response-to(medium) {
-          width: 289px;
+          width: 305px;
           height: auto;
-          top: 0;
+          top: -70px;
         }
       }
 
@@ -379,8 +398,15 @@ body {
         top: -73px;
 
         @include response-to(medium) {
-          width: 323px;
-          top: -55px;
+          display: none;
+        }
+
+        &.mob {
+          display: none;
+
+          @include response-to(medium) {
+            display: block;
+          }
         }
       }
 

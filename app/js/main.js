@@ -46,7 +46,7 @@ window.addEventListener('load', function () {
             return;
         }
 
-        const eventDate = new Date(2021, 9, 14);
+        const eventDate = new Date(2021, 9, 30);
 
         const numbers = {
             mins: document.querySelector('.counter__item.mins'),
