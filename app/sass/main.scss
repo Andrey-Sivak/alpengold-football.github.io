@@ -291,7 +291,6 @@ body {
 
       &_top {
         margin-bottom: 18px;
-        image-rendering: pixelated;
 
         @include response-to(huge) {
           width: 300px;
@@ -514,7 +513,6 @@ body {
       left: 50%;
       transform: translateX(-50%);
       bottom:-207px;
-      image-rendering: pixelated;
 
       @include response-to(small) {
         bottom: -195px;
