@@ -290,11 +290,7 @@ body {
       top: -160px; }
     body .content__chokos {
       margin-top: -15px;
-      margin-right: 57px;
-      -ms-interpolation-mode: nearest-neighbor;
-          image-rendering: -webkit-optimize-contrast;
-          image-rendering: -moz-crisp-edges;
-          image-rendering: pixelated; }
+      margin-right: 57px; }
       @media (max-width: 1300px) {
         body .content__chokos {
           width: 300px;

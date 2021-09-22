@@ -237,7 +237,6 @@ body {
     &__chokos {
       margin-top: -15px;
       margin-right: 57px;
-      image-rendering: pixelated;
 
       @include response-to(huge) {
         width: 300px;
